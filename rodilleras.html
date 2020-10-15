@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodilleras</title>
+  	<script src="js/responsive.js"></script>
+	<script src="js/tabla.js"></script>
+    <link rel="stylesheet" href="css/normalize.css"> <!--Saca los estilos del navegador por defecto-->
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+	<content>
+		<div class="contenedor">
+			<h1 class="titulo">Especialista en Voleyball</h1>
+			<p>En Voley en Casa tenes tu tienda online pensada para ofrecerte los mejores artículos de voley para tu seguridad ya sea entrenando o en partido!</p>            
+
+			<h2 class="subtitulo">La importancia de la proteccion de rodillas y codos</h2>
+			
+			<p>Cuando empezas a jugar al volleyball, tu cuerpo todavía no está acostumbrado a los golpes que vas a recibir, así que, al principio es importante que tengas protectores para los codos y las rodillas. Las mangas son una buena elección para aquellas personas que se preocupan mucho por sus brazos, o que tienen la piel demasiado sensible. Estas deben ser de licra, o algodón, y que deje transpirar bien a la piel. Algunas veces va a ser inevitable que tengas que lanzarte en plancha o de lado para alcanzar la pelota, y para esto estan las rodilleras, que te ayudaran a preparar tu cuerpo de los golpes y las caidas!.
+			</p>
+		</div>
+	</content>
+
+		<content>
+		<div class="contenedor">
+			<h2 class="barraProductos">Rodilleras</h2>
+			<div class="listaProductos">
+				<div class="productos">
+						<img src="img/rodilleraMizuno.jpg">
+						<h3>Mizuno</h3>
+					<ul>
+						<li>Color: Amarillo</li>
+						<li>Composición: Algodon</li>
+						<li>Talles disponibles: S - M - L</li>
+					</ul>		
+				</div>
+
+				<div class="productos">
+						<img src="img/rodilleraMikasa.jpg">
+						<h3>Mikasa</h3>
+					<ul>
+						<li>Color: Negro</li>
+						<li>Composición: Algodon</li>
+						<li>Talles disponibles: S - M - L</li>
+					</ul>
+				</div>
+
+				<div class="productos">
+					<img src="img/rodillerasNike.jpeg">
+						<h3>Nike</h3>
+					<ul>
+						<li>Color: Blanco</li>
+						<li>Composición: Algodon</li>
+						<li>Talles disponibles: S - M - L</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</content>
+
+
+	<section>
+		<div class="contenedor contenido-tabla">
+		
+			<form id="agregarTabla">
+				<input type="text"  id="ingresoMarca" placeholder="Ingresar marca">
+				<input type="text"  id="ingresoTalle" placeholder="Ingresar talle">
+				<input type="text"  id="ingresoPrecio" placeholder="Ingresar precio">
+				
+				
+				<button id="js-ingresar">Enviar</button>
+				<button id="js-agregar">Agregar fila</button>
+			</form>
+
+			<div class="resultado"></div>
+
+			<div class="datos"></div>
+				
+			<div class="div-filtrar">
+				<div class="div-filtro-marca">
+					<input class="filtro" id="filtro-marca" placeholder="Filtrar por marca">	
+					<button id="js-filtrar-marca" class="btn-min">Filtrar por marca</button>
+					<button id="js-limpiar-marca" class="btn-min">Limpiar</button>		
+				</div>
+
+				<div class="div-filtro-talle">
+					<input class="filtro" id="filtro-talle" placeholder="Filtrar por talle">	
+					<button id="js-filtrar-talle" class="btn-min">Filtrar por talle</button>
+					<button id="js-limpiar-talle" class="btn-min">Limpiar</button>		
+				</div>
+			</div>
+		</div>	
+		
+		<div class="contenedor">
+			<div class="msjEditar">
+	            <span>Ingrese los nuevos datos y vuelva a seleccionar el boton EDITAR</span>
+	        </div>
+		</div>
+		
+
+		<div class="contenedor">	
+			<!-- Es la tabla en la que agrego, elimino y modifico datos desde tabla.js-->
+			<table id="tablaDinamica">
+				<thead>
+					<tr>
+						<th>Marca</th>
+						<th>Talle</th>
+						<th>Precio</th>
+						<th class="little_th">Eliminar</th>
+						<th class="little_th">Editar</th>
+					</tr>
+					<tbody id="tablaBody">
+						
+					</tbody>
+					<tbody id="filtroBody">
+						
+					</tbody>
+				</thead>
+				<!-- Se llena el tbody dinamicamente desde tabla.js-->
+				<tbody id="tbodyDinamico">
+				<div class="oferta">Oferta del día!!!</div>
+				</tbody>
+			</table>
+
+			
+		</div>
+	</section>
+
+	<footer class="footer contenedor">
+		<div class="contenedorFooter">
+			<ul class="navegador">
+				<li><a target="_blank" href="index.html">Inicio</a></li>
+				<li><a href="rodilleras.html">Rodilleras</a></li>
+				<li><a target="_blank" href="mangas.html">Mangas</a></li>
+			</ul>
+			<p class="copyright">Todos los Derechos Reservados 2020 &copy;</p>
+		</div>
+	</footer>
+</body>
+</html>
