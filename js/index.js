@@ -1,6 +1,10 @@
-"use strict";
+document.addEventListener("DOMContentLoaded",init);
+
+
 
 function init() {
+  "use strict";
+
     let nombre = document.getElementById("nombre");
     let email = document.getElementById("email");
     let direccion = document.getElementById("direccion");
@@ -17,7 +21,7 @@ function init() {
         event.preventDefault();
         validar();
     })
-}
+
 
 function validarNombre() {
     let valorNombre = nombre.value;
@@ -112,4 +116,5 @@ function limpiarForm() {
     document.querySelector(".correcto").classList.remove("avisoCorrecto");
 }
 
-window.onload = init;
+}
+//window.onload = init;
