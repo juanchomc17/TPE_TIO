@@ -114,19 +114,24 @@
         </div>
     </section>
 
-     <form id="formulario" method="post" action="calculadora.php">
-		<input type="number" name="valor1">
-		<input type="number" name="valor2">
-    	<select name="operacion" id="operacion">
-			<option value="sumar">Sumar</option>
-			<option value="restar">Restar</option>
-			<option value="dividir">Dividir</option>
-			<option value="multiplicar">Multiplicar</option>
-		</select>
-		<button type="submit">Calcular</button>
-    </form>
+    <div class="contenedor">
+	    <form id="formulario" method="post" action="calculadora.php">
+			<input class="inputForm" type="number" name="valor1" placeholder="Ingresar un numero">
+			<input type="number" name="valor2" placeholder="Ingresar un numero">
+	    	<select name="operacion" id="operacion">
+				<option value="sumar">Sumar</option>
+				<option value="restar">Restar</option>
+				<option value="dividir">Dividir</option>
+				<option value="multiplicar">Multiplicar</option>
+			</select>
+			<button type="submit" id="btn-calcular">Calcular</button>
+	    </form>
+    
+    	<p id="js-resultado" class="resultado"></p>
+	</div>
 
-    <p id="js-resultado" class="resultado"></p>
+
+
 
 	<footer class="footer contenedor">
 		<div class="contenedorFooter">

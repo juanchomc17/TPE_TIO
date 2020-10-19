@@ -769,3 +769,25 @@ fieldset {
 	display: flex;
 	flex-direction: column;
 }
+
+#btn-calcular {
+	background-color: #00008B;
+	color: white;
+	padding: 5px 5px;
+
+}
+
+.inputForm {
+	margin-top: 30px;
+}
+
+#js-resultado {
+	background-color: yellow;
+}
+
+
+
+
+
+
+
