@@ -777,6 +777,10 @@ fieldset {
 
 }
 
+#btn-calcular:hover {
+	background-color: #483D8B;
+}
+
 .inputForm {
 	margin-top: 30px;
 }
