@@ -76,7 +76,7 @@ function validarTelefono() {
 }
 
 function validarCaptcha() {
-    let captcha = 'q' + 'G' +'p' + 'h' + 'J' + 'D';
+    let captcha = 'J' + 'G' +'A' + 'N' + 'T' + '3';
     let valorCaptcha = document.getElementById("ingresoCaptcha").value;
 
     if (valorCaptcha === "") {
