@@ -782,7 +782,8 @@ fieldset {
 }
 
 #js-resultado {
-	background-color: yellow;
+	background-color: #FF8C00;
+	text-align: center;
 }
 
 
