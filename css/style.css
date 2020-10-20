@@ -777,12 +777,17 @@ fieldset {
 
 }
 
+#btn-calcular:hover {
+	background-color: #483D8B;
+}
+
 .inputForm {
 	margin-top: 30px;
 }
 
 #js-resultado {
-	background-color: yellow;
+	background-color: #FF8C00;
+	text-align: center;
 }
 
 
