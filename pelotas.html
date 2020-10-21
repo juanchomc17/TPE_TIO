@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelotas</title>
+    <link rel="stylesheet" href="css/normalize.css"> <!--Saca los estilos del navegador por defecto-->
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/responsive.js"></script>
+	<script src="js/tabla.js"></script>
+
+</head>
+<body>
+	<header class="barra contenedor">
+		<div class="encabezado contenedor">
+			<img src="img/logo.jpg" alt="Logo página">
+			<ul class="navegador">
+				<li><a target="_blank" href="index.html">Inicio</a></li>
+				<li><a target="_blank" href="rodilleras.html">Rodilleras</a></li>
+				<li><a href="mangas.html">Mangas</a></li>
+			</ul>
+			<div class="btn_menu"><a href="#">MENÚ</a></div>
+		</div>
+		<ul class="navegador_mobil">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a target="_blank" href="rodilleras.html">Rodilleras</a></li>
+				<li><a target="_blank" href="mangas.html">Mangas</a></li>
+				<li><a target="_blank" href="pelotas.html">Pelotas</a></li>
+		</ul>
+	</header>
+
+	<section>
+		<div class="contenedor">
+			<h1 class="titulo">Especialista en Voleyball</h1>
+			<p>En Voley en Casa tenes tu tienda online pensada para ofrecerte los mejores artículos de voley para tu seguridad ya sea entrenando o en partido!</p>            
+
+			<h2 class="subtitulo">Como elegir la mejor pelota de volleyball</h2>
+			
+			<p>Uno de los factores más importantes para una práctica de voleibol segura y adecuada es la elección de la pelota. Una bola de peso y un material que no son apropiados para la práctica prevista y el perfil del jugador pueden ser un desastre no solo para el rendimiento del equipo sino también para la seguridad del jugador. Algunas de las variables que deben evaluarse para la mejor opción al comprar la pelota son: categoría, tipo, peso y material, entre otras características del producto. Las voleibol se pueden encontrar por menos de $ 50, pero los precios de los modelos profesionales y las marcas de renombre pueden alcanzar más de $ 500 en modelos oficiales y superar los $ 1000 para coleccionables.
+			</p>
+		</div>
+	</section>
+
+
+	
+		<section>
+			<div class="contenedor">
+				<h2 class="barraProductos">Pelotas</h2>
+				<div class="listaProductos">
+					<div class="productos">
+							<img src="img/mikasa_2020.jpg">
+							<h3>Mikasa MVA 200</h3>
+						<ul>
+							<li>Marca: Mikasa</li>
+							<li>Color: Azul y amarillo</li>
+							<li>Composición: Cuero</li>
+							<li>Talles disponibles: 5</li>
+						</ul>		
+					</div>
+
+					<div class="productos">
+							<img src="img/penalty_pro.jpg">
+							<h3>Penalty Pro 7.0</h3>
+						<ul>
+							<li>Marca: Penalty</li>
+							<li>Color: Violeta y amarillo</li>
+							<li>Composición: Cuero</li>
+							<li>Talles disponibles: 5</li>
+						</ul>
+					</div>
+
+					<div class="productos">
+						<img src="img/molten.jpg">
+							<h3>Molten</h3>
+						<ul>
+							<li>Marca: Molten</li>
+							<li>Color: Roja y blanca</li>
+							<li>Composición: Cuero</li>
+							<li>Talles disponibles: 5</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</section>
+	
+	<section>
+		<div class="contenedor contenido-tabla">
+		
+			<form id="agregarTabla">
+				<input type="text"  id="ingresoMarca" placeholder="Ingresar marca">
+				<input type="text"  id="ingresoTalle" placeholder="Ingresar talle">
+				<input type="text"  id="ingresoPrecio" placeholder="Ingresar precio">
+				
+				
+				<button id="js-ingresar">Enviar</button>
+				<button id="js-agregar">Agregar fila</button>
+			</form>
+
+			<div class="datos"></div>
+				
+			<div class="div-filtrar">
+				<div class="div-filtro-marca">
+					<input class="filtro" id="filtro-marca" placeholder="Filtrar por marca">	
+					<button id="js-filtrar-marca" class="btn-min">Filtrar por marca</button>
+					<button id="js-limpiar-marca" class="btn-min">Limpiar</button>		
+				</div>
+
+				<div class="div-filtro-talle">
+					<input class="filtro" id="filtro-talle" placeholder="Filtrar por talle">	
+					<button id="js-filtrar-talle" class="btn-min">Filtrar por talle</button>
+					<button id="js-limpiar-talle" class="btn-min">Limpiar</button>		
+				</div>
+			</div>
+		</div>	
+		
+		<div class="contenedor">
+			<div class="msjEditar">
+	        	<span>Ingrese los nuevos datos y vuelva a seleccionar el boton EDITAR</span>
+	        </div>
+		
+			<div class="msjErrorFiltro msjEditar">
+	        	<span>No se encuentra dato para filtrar</span>
+	        </div>
+		</div>
+		
+
+		<div class="contenedor">	
+			<!-- Es la tabla en la que agrego, elimino y modifico datos desde tabla.js-->
+			<table id="tablaDinamica">
+				<thead>
+					<tr>
+						<th>Marca</th>
+						<th>Talle</th>
+						<th>Precio</th>
+						<th class="little_th">Eliminar</th>
+						<th class="little_th">Editar</th>
+					</tr>
+					<tbody id="tablaBody">
+						
+					</tbody>
+					<tbody id="filtroBody">
+						
+					</tbody>
+				</thead>
+				<!-- Se llena el tbody dinamicamente desde tabla.js-->
+				<tbody id="tbodyDinamico">
+				<div class="oferta">Oferta del día!!!</div>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<footer class="footer contenedor">
+		<div class="contenedorFooter">
+			<ul class="navegador">
+				<li><a target="_blank" href="index.html">Inicio</a></li>
+				<li><a target="_blank" href="rodilleras.html">Rodilleras</a></li>
+				<li><a href="mangas.html">Mangas</a></li>
+			</ul>
+			<p class="copyright">Todos los Derechos Reservados 2020 &copy;</p>
+		</div>
+	</footer>
+</body>
+</html>
