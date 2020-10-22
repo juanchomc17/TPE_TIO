@@ -2,7 +2,7 @@
 
 
 function restar($v1,$v2){
-	$resultado =  $v1 + $v2;
+	$resultado =  $v1 - $v2;
 	return "El resultado es: " . $resultado;
 }
 
